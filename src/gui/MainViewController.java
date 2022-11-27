@@ -20,6 +20,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.services.DepartmentService;
+import model.services.SellerService;
 
 public class MainViewController implements Initializable {
 
@@ -34,7 +35,10 @@ public class MainViewController implements Initializable {
 
 	@FXML
 	public void onActionMenuItemSeller() {
-		System.out.println("seller");
+		loadView("/gui/SellerList.fxml", (SellerListController controller) -> {
+			controller.setService(new SellerService());
+			controller.updateTableView();
+		});
 	}
 
 	@FXML
