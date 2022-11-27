@@ -1,6 +1,7 @@
 package gui;
 
-import application.Main;
+import gui.util.Utils;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
@@ -10,7 +11,7 @@ public class AboutController {
 	private Button buttonClose;
 
 	@FXML
-	private void onActionButtonClose() {
-		Main.getSecondaryStage().hide();
+	private void onActionButtonClose(ActionEvent event) {
+		Utils.currentStage(event).close();
 	}
 }
