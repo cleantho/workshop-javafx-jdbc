@@ -8,9 +8,9 @@ public class AboutController {
 
 	@FXML
 	private Button buttonClose;
-	
+
 	@FXML
-	private void onClickButtonClose() {
+	private void onActionButtonClose() {
 		Main.getSecondaryStage().hide();
 	}
 }

@@ -19,7 +19,7 @@
       </Label>
    </top>
    <bottom>
-      <Button fx:id="buttonClose" mnemonicParsing="false" onAction="#onClickButtonClose" prefWidth="100.0" text="Close" BorderPane.alignment="CENTER">
+      <Button fx:id="buttonClose" mnemonicParsing="false" onAction="#onActionButtonClose" prefWidth="100.0" text="Close" BorderPane.alignment="CENTER">
          <BorderPane.margin>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </BorderPane.margin>
